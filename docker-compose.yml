@@ -1,0 +1,17 @@
+﻿version: '3.8'
+
+services:
+  GrpcGreeterClient:
+    container_name: GrpcClient
+    image: grpcclient
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8089:80"
+    networks:
+      - kafka
+
+networks:
+  kafka:
+    external: true

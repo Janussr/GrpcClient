@@ -1,0 +1,2 @@
+obj\Debug\net7.0\Protos/Catalogue.cs \
+obj\Debug\net7.0\Protos/CatalogueGrpc.cs: Protos/catalogue.proto
